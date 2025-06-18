@@ -7,33 +7,33 @@ Project Layout
 test_app/
 ├── src/
 │   ├── agents/
+│   │   ├── dependency_agent.py
 │   │   ├── file_type_agent.py
-│   │   ├── format_detector_agent.py
-│   │   └── dependency_agent.py
-│   │
-│   ├── orchestrator/
-│   │   ├── document_pipeline.py
-│   │   └── core_orchestrator.py
+│   │   └── format_detector_agent.py
 │   │
 │   ├── api/
+│   │   ├── feedback.py
 │   │   ├── main.py
-│   │   ├── upload.py
-│   │   └── feedback.py
+│   │   └── upload.py
+│   │
+│   ├── data/
+│   │   └── sample_files/
 │   │
 │   ├── models/
-│   │   ├── master_formats.xlsx
-│   │   └── manager.py
+│   │   ├── manager.py
+│   │   └── master_formats.xlsx
 │   │
-│   ├── utils/
-│   │   ├── preprocessing.py
-│   │   └── embeddings.py
+│   ├── orchestrator/
+│   │   ├── core_orchestrator.py
+│   │   └── document_pipeline.py
 │   │
-│   └── data/
-│       └── sample_files/
+│   └── utils/
+│       ├── embeddings.py
+│       └── preprocessing.py
 │
 └── tests/
-    ├── test_format_detection.py
-    └── test_agents.py
+    ├── test_agents.py
+    └── test_format_detection.py
 
 src/agents
 
